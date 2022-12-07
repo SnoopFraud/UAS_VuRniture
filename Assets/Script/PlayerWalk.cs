@@ -8,15 +8,14 @@ public class PlayerWalk : MonoBehaviour
     private RaycastHit _hit;
     public int _playerSpeed;
 
-    public GameObject desc;
+    //Gameobject Name
 
     // Start is called before the first frame update
     void Start()
     {
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
-
-        desc.gameObject.SetActive(false);
         
+        //Cari object by name
     }
 
     // Update is called once per frame
@@ -31,20 +30,13 @@ public class PlayerWalk : MonoBehaviour
                 if(_hit.transform.CompareTag("Furniture"))
                 {
                     Debug.Log("NO MOVE");
+
+                    //If objek yg divar ada
                 }
                 else
                 {
                     transform.position
                     = transform.position + Camera.main.transform.forward * _playerSpeed * Time.deltaTime;
-                }
-
-                if (_hit.transform.CompareTag("Furniture"))
-                {
-                    desc.gameObject.SetActive(true);
-                }
-                else
-                {
-                    desc.gameObject.SetActive(false);
                 }
             }
             

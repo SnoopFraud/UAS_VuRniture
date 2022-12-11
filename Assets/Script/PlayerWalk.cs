@@ -43,8 +43,10 @@ public class PlayerWalk : MonoBehaviour
                 if (_hit.transform.gameObject.CompareTag("Furniture"))
                 {
                     //Switch if object
-                    /*switch (_hit.transform.gameObject.name)
+                    switch (_hit.transform.gameObject.name)
                     {
+                        //Testing
+                        
                         case "Objek":
                             ManagerUI.objek_price = "Cube is Rp. 2500";
                             ManagerUI.url = "https://youtu.be/53xLO-Asq3w";
@@ -53,7 +55,41 @@ public class PlayerWalk : MonoBehaviour
                             ManagerUI.objek_price = "Cube2 is Rp. 1500";
                             ManagerUI.url = "https://youtu.be/MtZTFMwxgNo";
                             break;
-                    }*/
+
+                        //Furniture Interact
+                        case "Kasur":
+                            ManagerUI.objek_price = "Kasur - Rp. 2.229.000";
+                            ManagerUI.url = "https://bit.ly/3Pg6GIw";
+                            break;
+                        case "Meja Belajar":
+                            ManagerUI.objek_price = "Meja belajar - Rp. 3.339.000";
+                            ManagerUI.url = "https://bit.ly/3W4AMRn";
+                            break;
+                        case "Meja Kecil":
+                            ManagerUI.objek_price = "Meja kecil - Rp. 1.499.000";
+                            ManagerUI.url = "https://bit.ly/3V1wgCB";
+                            break;
+                        case "Sofa":
+                            ManagerUI.objek_price = "Sofa - Rp. 5.395.000";
+                            ManagerUI.url = "https://bit.ly/3UQ3UuG";
+                            break;
+                        case "KursiKerja":
+                            ManagerUI.objek_price = "Kursi - Rp. 1.505.000";
+                            ManagerUI.url = "https://bit.ly/3hfvBzn";
+                            break;
+                        case "Lemari buku":
+                            ManagerUI.objek_price = "Lemari buku - Rp. 799.000";
+                            ManagerUI.url = "https://bit.ly/3uC1eX5";
+                            break;
+                        case "Lemari Kecil":
+                            ManagerUI.objek_price = "Lemari kecil - Rp. 629.000";
+                            ManagerUI.url = "https://bit.ly/3W7N6AA";
+                            break;
+                        case "Lampu":
+                            ManagerUI.objek_price = "Lampu - Rp. 449.000";
+                            ManagerUI.url = "https://bit.ly/3Hn07Sv";
+                            break;
+                    }
 
                     
                 }

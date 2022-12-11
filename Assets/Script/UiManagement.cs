@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class UiManagement : MonoBehaviour
@@ -30,5 +31,10 @@ public class UiManagement : MonoBehaviour
     public void UrlClick()
     {
         Application.OpenURL(url);
+    }
+
+    public void BackButton(string Scene)
+    {
+        SceneManager.LoadScene(Scene);
     }
 }
